@@ -8,3 +8,4 @@ gTTS
 python-dotenv
 numpy
 torch
+imageio-ffmpeg
