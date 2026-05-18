@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+ffmpeg-python
+openai-whisper
+deep-translator
+gTTS
+python-dotenv
+numpy
+torch
