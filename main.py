@@ -10,7 +10,16 @@ from services.translate import translate_segments
 from services.tts import generate_tts
 from services.merger import merge_audio_video
 
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI(title="DubAI")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 TEMP_DIR = Path("temp")
 TEMP_DIR.mkdir(exist_ok=True)
